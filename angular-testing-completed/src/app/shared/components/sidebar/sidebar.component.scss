@@ -1,0 +1,23 @@
+.links {
+  list-style: none;
+  margin-right: 50px;
+  padding: 0;
+  width: 150px;
+}
+
+.link {
+  border: 1px solid #efefef;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background-color: white;
+
+  &:hover {
+    background-color: rgba(black, 0.1);
+  }
+  
+  &.active {
+    background-color: rgb(87, 87, 255);
+    color: white;
+  }
+}
