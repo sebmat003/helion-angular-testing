@@ -1,1 +1,28 @@
-<p>simple works!</p>
+<div class="categories">
+  <button
+    [class.active]="activeCategory() === 'ALL'"
+    (click)="activeCategory.set('ALL')"
+  >
+    All
+  </button>
+  @for (category of categories; track $index) {
+  <button
+    [class.active]="category === activeCategory()"
+    (click)="activeCategory.set(category)"
+  >
+    {{ category | titlecase }}
+  </button>
+  }
+</div>
+
+@if (books.length) { @for (book of filteredBooks; track book.id) {
+<div class="book">
+  <div class="content">
+    {{ book.name }} - {{ book.category }}
+    @if (book.bestseller) {
+    <span class="bestseller">bestseller!</span>
+    }
+  </div>
+  <p class="price" [class.cheap]="book.price <= 10">{{ book.price }}$</p>
+</div>
+} } @else { No available books on the list }
