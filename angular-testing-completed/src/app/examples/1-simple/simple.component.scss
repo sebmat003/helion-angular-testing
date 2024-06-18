@@ -26,12 +26,13 @@
   border-radius: 3px;
   position: relative;
 
-  .content {
-
-  }
-
   .price {
-
+    font-size: 20px;
+    font-weight: bold;
+  
+    &.cheap {
+      color: rgb(255, 62, 62)
+    }
   }
 }
 
@@ -42,13 +43,4 @@
   color: rgb(87, 87, 255);
   font-size: 13px;
   font-weight: bold;
-}
-
-.price {
-  font-size: 20px;
-  font-weight: bold;
-
-  &.cheap {
-    color: rgb(255, 62, 62)
-  }
 }

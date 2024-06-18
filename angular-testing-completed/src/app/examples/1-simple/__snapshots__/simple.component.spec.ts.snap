@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleComponent should match the snapshot 1`] = `
+<app-simple
+  activeCategory={[Function Function]}
+  books={[Function Array]}
+  categories={[Function Array]}
+  filteredBooks={[Function Array]}
+>
+  <div
+    class="categories"
+  >
+    <button
+      class="active"
+    >
+       All 
+    </button>
+    <button>
+       Fantasy 
+    </button>
+    <button>
+       Science Fiction 
+    </button>
+    <button>
+       Biography 
+    </button>
+    <button>
+       Thriller 
+    </button>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        My biography - biography
+      </p>
+    </div>
+    <p
+      class="price"
+    >
+      20$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Harry Potter and the Philosopher\`s Stone - fantasy
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      20$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Harry Potter and the Chamber of Secrets - fantasy
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      30$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Harry Potter and the Prisoner of Azkaban - fantasy
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      30$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Harry Potter and the Goblet of Fire - fantasy
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      30$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Harry Potter and the Order of the Phoenix - fantasy
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      30$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Day zero - science fiction
+      </p>
+    </div>
+    <p
+      class="price cheap"
+    >
+      10$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        My biography - thriller
+      </p>
+    </div>
+    <p
+      class="price cheap"
+    >
+      5$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Solaris - science fiction
+      </p>
+    </div>
+    <p
+      class="price"
+    >
+      20$
+    </p>
+  </div><div
+    class="book"
+  >
+    <div>
+      <p>
+        Ender\`s game - science fiction
+      </p>
+      <span
+        class="bestseller"
+      >
+        bestseller!
+      </span>
+    </div>
+    <p
+      class="price"
+    >
+      40$
+    </p>
+  </div>
+</app-simple>
+`;

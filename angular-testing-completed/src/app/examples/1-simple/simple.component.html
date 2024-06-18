@@ -15,14 +15,16 @@
   }
 </div>
 
-@if (books.length) { @for (book of filteredBooks; track book.id) {
+@if (filteredBooks.length) { @for (book of filteredBooks; track book.id) {
 <div class="book">
-  <div class="content">
-    {{ book.name }} - {{ book.category }}
+  <div>
+    <p>{{ book.name }} - {{ book.category }}</p>
     @if (book.bestseller) {
     <span class="bestseller">bestseller!</span>
     }
   </div>
   <p class="price" [class.cheap]="book.price <= 10">{{ book.price }}$</p>
 </div>
-} } @else { No available books on the list }
+} } @else {
+<p>No available books on the list</p>
+}
