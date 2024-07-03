@@ -1,0 +1,15 @@
+<form>
+  <mat-form-field>
+    <mat-label>Choose expense year</mat-label>
+    <input matInput placeholder="Year" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Choose category</mat-label>
+    <mat-select>
+      @for (category of categories; track $index) {
+      <mat-option [value]="category">{{ category }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  <button>Filter</button>
+</form>

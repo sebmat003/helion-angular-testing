@@ -1,1 +1,4 @@
-<p>complex works!</p>
+@if (expenses()) {
+<app-table [expenses]="expenses()"></app-table>
+<app-summary [expenses]="expenses()"></app-summary>
+}
