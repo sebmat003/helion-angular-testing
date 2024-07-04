@@ -1,17 +1,22 @@
-import { Component, input, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  OnChanges,
+} from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
-import { MatDivider } from '@angular/material/divider';
 import { Expense } from '../../models/data.models';
 
 @Component({
   selector: 'app-summary',
   standalone: true,
-  imports: [MatDivider, BaseChartDirective],
+  imports: [BaseChartDirective],
   templateUrl: './summary.component.html',
   styleUrl: './summary.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SummaryComponent implements OnInit {
+export class SummaryComponent implements OnChanges {
   expenses = input.required<Expense[]>();
   pieChartOptions: ChartConfiguration['options'] = {
     plugins: {
@@ -31,7 +36,7 @@ export class SummaryComponent implements OnInit {
   };
   pieChartType: ChartType = 'pie';
 
-  ngOnInit() {
+  ngOnChanges() {
     const groupByCategories = this.expenses().reduce((acc: any, expense) => {
       const { category, sum } = expense;
       if (!acc[category]) {
@@ -40,7 +45,13 @@ export class SummaryComponent implements OnInit {
       acc[category] += sum;
       return acc;
     }, {});
-    this.pieChartData.labels = Object.keys(groupByCategories);
-    this.pieChartData.datasets[0].data = Object.values(groupByCategories);
+    this.pieChartData = {
+      labels: Object.keys(groupByCategories),
+      datasets: [
+        {
+          data: Object.values(groupByCategories),
+        },
+      ],
+    };
   }
 }

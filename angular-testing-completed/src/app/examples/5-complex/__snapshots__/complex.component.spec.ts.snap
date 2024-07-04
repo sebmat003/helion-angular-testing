@@ -1,0 +1,605 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComplexComponent should match the snapshot 1`] = `
+<app-complex
+  dataService={[Function DataService]}
+  expenses={[Function Function]}
+  injector={[Function R3Injector]}
+>
+  <app-table-filters>
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+    >
+      <mat-form-field
+        class="mat-mdc-form-field mat-mdc-form-field-type-mat-input mat-form-field-no-animations mat-form-field-appearance-fill mat-form-field-hide-placeholder mat-primary ng-untouched ng-pristine ng-valid"
+      >
+        <div
+          class="mat-mdc-text-field-wrapper mdc-text-field mdc-text-field--filled"
+        >
+          <div
+            class="mat-mdc-form-field-focus-overlay"
+          />
+          <div
+            class="mat-mdc-form-field-flex"
+          >
+            <div
+              class="mat-mdc-form-field-infix"
+            >
+              <label
+                class="mdc-floating-label mat-mdc-floating-label"
+                matformfieldfloatinglabel=""
+              >
+                <mat-label>
+                  Choose expense year
+                </mat-label>
+              </label>
+              <input
+                aria-invalid="false"
+                aria-required="false"
+                class="mat-mdc-input-element ng-untouched ng-pristine ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored"
+                formcontrolname="year"
+                matinput=""
+                placeholder="Year"
+              />
+            </div>
+          </div>
+          <div
+            class="mdc-line-ripple mdc-line-ripple--deactivating"
+            matformfieldlineripple=""
+          />
+        </div>
+        <div
+          class="mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align"
+        >
+          <div
+            class="mat-mdc-form-field-hint-wrapper ng-trigger ng-trigger-transitionMessages"
+            style="opacity: 1; transform: translateY(0%);"
+          >
+            <div
+              class="mat-mdc-form-field-hint-spacer"
+            />
+          </div>
+        </div>
+      </mat-form-field>
+      <mat-form-field
+        class="mat-mdc-form-field mat-mdc-form-field-type-mat-select mat-form-field-no-animations mat-form-field-appearance-fill mat-form-field-hide-placeholder mat-primary ng-untouched ng-pristine ng-valid"
+      >
+        <div
+          class="mat-mdc-text-field-wrapper mdc-text-field mdc-text-field--filled"
+        >
+          <div
+            class="mat-mdc-form-field-focus-overlay"
+          />
+          <div
+            class="mat-mdc-form-field-flex"
+          >
+            <div
+              class="mat-mdc-form-field-infix"
+            >
+              <label
+                class="mdc-floating-label mat-mdc-floating-label"
+                matformfieldfloatinglabel=""
+              >
+                <mat-label>
+                  Choose category
+                </mat-label>
+              </label>
+              <mat-select
+                aria-autocomplete="none"
+                aria-disabled="false"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-invalid="false"
+                aria-required="false"
+                class="mat-mdc-select mat-mdc-select-empty mat-mdc-select-multiple ng-untouched ng-pristine ng-valid"
+                formcontrolname="categories"
+                multiple="true"
+                role="combobox"
+                tabindex="0"
+              >
+                <div
+                  cdk-overlay-origin=""
+                  class="mat-mdc-select-trigger"
+                >
+                  <div
+                    class="mat-mdc-select-value"
+                  >
+                    <span
+                      class="mat-mdc-select-placeholder mat-mdc-select-min-line"
+                    >
+                    </span>
+                  </div>
+                  <div
+                    class="mat-mdc-select-arrow-wrapper"
+                  >
+                    <div
+                      class="mat-mdc-select-arrow"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        width="24px"
+                      >
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </mat-select>
+            </div>
+          </div>
+          <div
+            class="mdc-line-ripple mdc-line-ripple--deactivating"
+            matformfieldlineripple=""
+          />
+        </div>
+        <div
+          class="mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align"
+        >
+          <div
+            class="mat-mdc-form-field-hint-wrapper ng-trigger ng-trigger-transitionMessages"
+            style="opacity: 1; transform: translateY(0%);"
+          >
+            <div
+              class="mat-mdc-form-field-hint-spacer"
+            />
+          </div>
+        </div>
+      </mat-form-field>
+      <button
+        type="submit"
+      >
+        Filter
+      </button>
+    </form>
+  </app-table-filters><div
+    class="flex-between"
+  >
+    <app-table>
+      <div
+        class="mat-elevation-z8"
+      >
+        <table
+          class="mat-mdc-table mdc-data-table__table cdk-table"
+          mat-table=""
+          role="table"
+        >
+          <thead
+            role="rowgroup"
+          >
+            <tr
+              class="mat-mdc-header-row mdc-data-table__header-row cdk-header-row"
+              mat-header-row=""
+              role="row"
+            >
+              <th
+                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell cdk-column-id mat-column-id"
+                mat-header-cell=""
+                role="columnheader"
+              >
+                Id
+              </th>
+              <th
+                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell cdk-column-date mat-column-date"
+                mat-header-cell=""
+                role="columnheader"
+              >
+                Date
+              </th>
+              <th
+                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell cdk-column-name mat-column-name"
+                mat-header-cell=""
+                role="columnheader"
+              >
+                Name
+              </th>
+              <th
+                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell cdk-column-category mat-column-category"
+                mat-header-cell=""
+                role="columnheader"
+              >
+                Category
+              </th>
+              <th
+                class="mat-mdc-header-cell mdc-data-table__header-cell cdk-header-cell cdk-column-sum mat-column-sum"
+                mat-header-cell=""
+                role="columnheader"
+              >
+                Sum
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="mdc-data-table__content"
+            role="rowgroup"
+          >
+            <tr
+              class="mat-mdc-row mdc-data-table__row cdk-row"
+              mat-row=""
+              role="row"
+            >
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-id mat-column-id"
+                mat-cell=""
+              >
+                1
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-date mat-column-date"
+                mat-cell=""
+              >
+                2000-02-02
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name"
+                mat-cell=""
+              >
+                mechanic
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-category mat-column-category"
+                mat-cell=""
+              >
+                Car
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-sum mat-column-sum"
+                mat-cell=""
+              >
+                1000 $
+              </td>
+            </tr>
+            <tr
+              class="mat-mdc-row mdc-data-table__row cdk-row"
+              mat-row=""
+              role="row"
+            >
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-id mat-column-id"
+                mat-cell=""
+              >
+                2
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-date mat-column-date"
+                mat-cell=""
+              >
+                2001-01-13
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name"
+                mat-cell=""
+              >
+                leasing
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-category mat-column-category"
+                mat-cell=""
+              >
+                Debt
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-sum mat-column-sum"
+                mat-cell=""
+              >
+                3950.5 $
+              </td>
+            </tr>
+            <tr
+              class="mat-mdc-row mdc-data-table__row cdk-row"
+              mat-row=""
+              role="row"
+            >
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-id mat-column-id"
+                mat-cell=""
+              >
+                3
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-date mat-column-date"
+                mat-cell=""
+              >
+                2000-03-15
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name"
+                mat-cell=""
+              >
+                phone
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-category mat-column-category"
+                mat-cell=""
+              >
+                Debt
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-sum mat-column-sum"
+                mat-cell=""
+              >
+                500 $
+              </td>
+            </tr>
+            <tr
+              class="mat-mdc-row mdc-data-table__row cdk-row"
+              mat-row=""
+              role="row"
+            >
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-id mat-column-id"
+                mat-cell=""
+              >
+                4
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-date mat-column-date"
+                mat-cell=""
+              >
+                2000-07-12
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name"
+                mat-cell=""
+              >
+                books
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-category mat-column-category"
+                mat-cell=""
+              >
+                Education
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-sum mat-column-sum"
+                mat-cell=""
+              >
+                250 $
+              </td>
+            </tr>
+            <tr
+              class="mat-mdc-row mdc-data-table__row cdk-row"
+              mat-row=""
+              role="row"
+            >
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-id mat-column-id"
+                mat-cell=""
+              >
+                5
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-date mat-column-date"
+                mat-cell=""
+              >
+                2000-04-22
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-name mat-column-name"
+                mat-cell=""
+              >
+                shopping mall
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-category mat-column-category"
+                mat-cell=""
+              >
+                Shopping
+              </td>
+              <td
+                class="mat-mdc-cell mdc-data-table__cell cdk-cell cdk-column-sum mat-column-sum"
+                mat-cell=""
+              >
+                294.85 $
+              </td>
+            </tr>
+          </tbody>
+          <tfoot
+            role="rowgroup"
+            style="display: none;"
+          >
+          </tfoot>
+        </table>
+        <mat-paginator
+          class="mat-mdc-paginator"
+          role="group"
+        >
+          <div
+            class="mat-mdc-paginator-outer-container"
+          >
+            <div
+              class="mat-mdc-paginator-container"
+            >
+              <div
+                class="mat-mdc-paginator-page-size"
+              >
+                <div
+                  class="mat-mdc-paginator-page-size-label"
+                >
+                   Items per page: 
+                </div>
+                <mat-form-field
+                  class="mat-mdc-form-field mat-mdc-paginator-page-size-select mat-mdc-form-field-type-mat-select mat-form-field-no-animations mat-form-field-appearance-outline mat-primary"
+                >
+                  <div
+                    class="mat-mdc-text-field-wrapper mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
+                  >
+                    <div
+                      class="mat-mdc-form-field-flex"
+                    >
+                      <div
+                        class="mdc-notched-outline mdc-notched-outline--no-label"
+                        matformfieldnotchedoutline=""
+                      >
+                        <div
+                          class="mdc-notched-outline__leading"
+                        />
+                        <div
+                          class="mdc-notched-outline__notch"
+                        >
+                        </div>
+                        <div
+                          class="mdc-notched-outline__trailing"
+                        />
+                      </div>
+                      <div
+                        class="mat-mdc-form-field-infix"
+                      >
+                        <mat-select
+                          aria-autocomplete="none"
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-invalid="false"
+                          aria-required="false"
+                          class="mat-mdc-select mat-mdc-select-empty"
+                          hidesingleselectionindicator=""
+                          role="combobox"
+                          tabindex="0"
+                        >
+                          <div
+                            cdk-overlay-origin=""
+                            class="mat-mdc-select-trigger"
+                          >
+                            <div
+                              class="mat-mdc-select-value"
+                            >
+                              <span
+                                class="mat-mdc-select-placeholder mat-mdc-select-min-line"
+                              >
+                              </span>
+                            </div>
+                            <div
+                              class="mat-mdc-select-arrow-wrapper"
+                            >
+                              <div
+                                class="mat-mdc-select-arrow"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  focusable="false"
+                                  height="24px"
+                                  viewBox="0 0 24 24"
+                                  width="24px"
+                                >
+                                  <path
+                                    d="M7 10l5 5 5-5z"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-select>
+                        <div
+                          class="mat-mdc-paginator-touch-target"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align"
+                  >
+                    <div
+                      class="mat-mdc-form-field-hint-wrapper ng-trigger ng-trigger-transitionMessages"
+                      style="opacity: 1; transform: translateY(0%);"
+                    >
+                      <div
+                        class="mat-mdc-form-field-hint-spacer"
+                      />
+                    </div>
+                  </div>
+                </mat-form-field>
+              </div>
+              <div
+                class="mat-mdc-paginator-range-actions"
+              >
+                <div
+                  aria-live="polite"
+                  class="mat-mdc-paginator-range-label"
+                >
+                   0 of 0 
+                </div>
+                <button
+                  aria-label="Previous page"
+                  class="mat-mdc-tooltip-trigger mat-mdc-paginator-navigation-previous mdc-icon-button mat-mdc-icon-button mat-mdc-button-disabled _mat-animation-noopable mat-unthemed mat-mdc-button-base mat-mdc-tooltip-disabled"
+                  disabled="true"
+                  mat-icon-button=""
+                  mat-ripple-loader-centered=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-disabled=""
+                  mat-ripple-loader-uninitialized=""
+                  type="button"
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="mat-mdc-paginator-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                  <span
+                    class="mat-mdc-focus-indicator"
+                  />
+                  <span
+                    class="mat-mdc-button-touch-target"
+                  />
+                </button>
+                <button
+                  aria-label="Next page"
+                  class="mat-mdc-tooltip-trigger mat-mdc-paginator-navigation-next mdc-icon-button mat-mdc-icon-button mat-mdc-button-disabled _mat-animation-noopable mat-unthemed mat-mdc-button-base mat-mdc-tooltip-disabled"
+                  disabled="true"
+                  mat-icon-button=""
+                  mat-ripple-loader-centered=""
+                  mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                  mat-ripple-loader-disabled=""
+                  mat-ripple-loader-uninitialized=""
+                  type="button"
+                >
+                  <span
+                    class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="mat-mdc-paginator-icon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                  <span
+                    class="mat-mdc-focus-indicator"
+                  />
+                  <span
+                    class="mat-mdc-button-touch-target"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </mat-paginator>
+      </div>
+    </app-table>
+    <app-summary>
+      <canvas
+        basechart=""
+        height="0"
+        style="display: block; box-sizing: border-box; height: 0px; width: 0px;"
+        width="0"
+      />
+    </app-summary>
+  </div>
+</app-complex>
+`;
