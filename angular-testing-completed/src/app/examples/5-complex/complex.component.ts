@@ -13,7 +13,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Expense } from './models/data.models';
 import { TableFiltersComponent } from './components/table-filters/table-filters.component';
 import { Filters } from './models/filters.models';
-import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'app-complex',

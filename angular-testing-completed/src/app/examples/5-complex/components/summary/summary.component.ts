@@ -27,7 +27,7 @@ export class SummaryComponent implements OnChanges {
     },
   };
   pieChartData: ChartData<'pie', number[], string | string[]> = {
-    labels: [['Download', 'Sales'], ['In', 'Store', 'Sales'], 'Mail Sales'],
+    labels: [],
     datasets: [
       {
         data: [],

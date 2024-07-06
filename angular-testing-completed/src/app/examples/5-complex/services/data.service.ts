@@ -6,13 +6,15 @@ import { Filters } from '../models/filters.models';
 
 @Injectable()
 export class DataService {
+  expenses = EXPENSES;
+
   getAllExpenses(): Observable<Expense[]> {
-    return of(EXPENSES);
+    return of(this.expenses);
   }
 
   getFilteredExpenses({ categories, year }: Filters) {
     return of(
-      EXPENSES.filter((expense) => {
+      this.expenses.filter((expense) => {
         if (categories?.length && year) {
           return (
             this.checkCategory(categories, expense) &&
