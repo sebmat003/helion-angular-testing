@@ -5,7 +5,6 @@ import { ViewContainerRef } from '@angular/core';
 
 describe('LoaderDirective', () => {
   let spectator: SpectatorDirective<LoaderDirective>;
-  let vcf: ViewContainerRef;
   const createDirective = createDirectiveFactory({
     directive: LoaderDirective,
     detectChanges: false,

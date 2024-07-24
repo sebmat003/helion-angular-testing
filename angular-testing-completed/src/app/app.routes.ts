@@ -4,11 +4,11 @@ import { AbstractClassUsageComponent } from './examples/10-abstract-class/abstra
 import { UtilsUsageComponent } from './examples/9-utils/utils-usage.component';
 import { NgrxStoreUsageComponent } from './examples/8-ngrx-store/ngrx-store-usage.component';
 import { InterceptorUsageComponent } from './examples/7-interceptor/interceptor-usage.component';
-import { GuardUsageComponent } from './examples/6-guard/guard-usage.component';
 import { ComplexComponent } from './examples/5-complex/complex.component';
 import { DirectiveUsageComponent } from './examples/4-directive/directive-usage.component';
 import { PipeUsageComponent } from './examples/3-pipe/pipe-usage.component';
 import { ServiceUsageComponent } from './examples/2-service/service-usage.component';
+import { GUARD_ROUTES } from './examples/6-guard/guard.routes';
 
 export enum Paths {
   SIMPLE_COMPONENT = '1',
@@ -46,7 +46,7 @@ export const routes: Routes = [
   },
   {
     path: Paths.GUARD,
-    loadComponent: () => GuardUsageComponent,
+    loadChildren: () => GUARD_ROUTES,
   },
   {
     path: Paths.INTERCEPTOR,
