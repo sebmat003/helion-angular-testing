@@ -8,7 +8,6 @@ import { ComplexComponent } from './examples/5-complex/complex.component';
 import { DirectiveUsageComponent } from './examples/4-directive/directive-usage.component';
 import { PipeUsageComponent } from './examples/3-pipe/pipe-usage.component';
 import { ServiceUsageComponent } from './examples/2-service/service-usage.component';
-import { GUARD_ROUTES } from './examples/6-guard/guard.routes';
 
 export enum Paths {
   SIMPLE_COMPONENT = '1',
@@ -46,7 +45,8 @@ export const routes: Routes = [
   },
   {
     path: Paths.GUARD,
-    loadChildren: () => GUARD_ROUTES,
+    loadChildren: () =>
+      import('./examples/6-guard/guard.routes').then((r) => r.GUARD_ROUTES),
   },
   {
     path: Paths.INTERCEPTOR,
