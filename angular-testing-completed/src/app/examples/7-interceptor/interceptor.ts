@@ -17,7 +17,7 @@ export const errorInterceptor: HttpInterceptorFn = (
 
   return next(request).pipe(
     catchError((error: HttpErrorResponse): Observable<HttpEvent<unknown>> => {
-      const errorMessage = error.message || error.error.message;
+      const errorMessage = error.error.message || error.message;
       errorService.error$.next(errorMessage);
 
       return throwError(() => errorMessage);
