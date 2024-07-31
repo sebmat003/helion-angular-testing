@@ -1,14 +1,14 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { createReducer, on } from '@ngrx/store';
-import * as ProductActions from './../actions/actions';
 import { Product } from '../../models/store.models';
+import { ProductActions } from '../actions/actions';
 
 export const adapter: EntityAdapter<Product> = createEntityAdapter<Product>();
 export const initialState: EntityState<Product> = adapter.getInitialState([]);
 
 export const productsReducer = createReducer(
   initialState,
-  on(ProductActions.productListLoadSuccessfully, (state, { products }) =>
+  on(ProductActions.getProductListSuccess, (state, { products }) =>
     adapter.setAll(products, state)
   ),
   on(ProductActions.addProduct, (state, { product }) =>

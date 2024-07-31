@@ -1,9 +1,9 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
-import * as ProductActions from './../actions/actions';
 import { Product } from '../../models/store.models';
 import { convertArrayToEntityState } from '../../../9-utils/utils';
 import { productsReducer } from './reducers';
 import { mockProducts } from '../../testing/product-testing.data';
+import { ProductActions } from '../actions/actions';
 
 describe('Product reducer', () => {
   const adapter: EntityAdapter<Product> = createEntityAdapter<Product>();
@@ -13,7 +13,7 @@ describe('Product reducer', () => {
   };
 
   it('should set all products', () => {
-    const action = ProductActions.productListLoadSuccessfully({
+    const action = ProductActions.getProductListSuccess({
       products: [...mockProducts],
     });
     const expectedState: EntityState<Product> = { ...productEntityState };
@@ -42,21 +42,17 @@ describe('Product reducer', () => {
   });
 
   it('should delete product', () => {
-    const product: Product = {
-      id: 3,
-      name: 'name3',
-      price: 300,
-      thumbnail: 'test3.jpg',
-    };
-    const initialProducts = [...mockProducts, product];
+    const initialProducts = mockProducts;
 
-    const action = ProductActions.deleteProduct({ productId: product.id });
+    const action = ProductActions.deleteProduct({
+      productId: mockProducts[1].id,
+    });
 
     const initialState: EntityState<Product> = {
       ...convertArrayToEntityState(initialProducts),
     };
     const result = productsReducer(initialState, action);
-    expect(result).toEqual(productEntityState);
+    expect(result).toEqual({ ...convertArrayToEntityState([mockProducts[0]]) });
   });
 
   it('should edit product', () => {

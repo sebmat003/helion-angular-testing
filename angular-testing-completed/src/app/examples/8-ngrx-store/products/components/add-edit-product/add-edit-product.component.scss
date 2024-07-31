@@ -1,0 +1,21 @@
+h2 {
+  margin-left: 24px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+::ng-deep  {
+  mat-option {
+    &.image-option.image-option {
+      height: 5rem;
+      .image-preview {
+        max-width: 3rem;
+        max-height: 4rem;
+      }
+    }
+  }
+}

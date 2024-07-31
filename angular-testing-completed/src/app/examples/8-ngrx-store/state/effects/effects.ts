@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { createEffect, ofType, Actions } from '@ngrx/effects';
 import { catchError, map, of, switchMap } from 'rxjs';
 import { ProductsService } from '../services/product.service';
-import * as ProductActions from './../actions/actions';
+import { ProductActions } from '../actions/actions';
 
 @Injectable()
 export class ProductEffects {
@@ -16,11 +16,9 @@ export class ProductEffects {
       ofType(ProductActions.getProductList),
       switchMap(() =>
         this.productsService.getAllProducts().pipe(
-          map((products) =>
-            ProductActions.productListLoadSuccessfully({ products })
-          ),
+          map((products) => ProductActions.getProductListSuccess({ products })),
           catchError((error) =>
-            of(ProductActions.productListLoadFailure({ error }))
+            of(ProductActions.getProductListError({ error }))
           )
         )
       )

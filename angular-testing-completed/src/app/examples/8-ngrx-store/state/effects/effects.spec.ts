@@ -4,7 +4,7 @@ import { cold, hot } from 'jest-marbles';
 import { Observable, of } from 'rxjs';
 import { ProductEffects } from './effects';
 import { ProductsService } from '../services/product.service';
-import * as ProductActions from './../actions/actions';
+import { ProductActions } from '../actions/actions';
 
 describe('Product Effects', () => {
   let effects: ProductEffects;
@@ -29,7 +29,7 @@ describe('Product Effects', () => {
   it('should load product list successfully', () => {
     mockProductsService.getAllProducts = () => of([]);
     const action = ProductActions.getProductList();
-    const completion = ProductActions.productListLoadSuccessfully({
+    const completion = ProductActions.getProductListSuccess({
       products: [],
     });
 
@@ -42,10 +42,10 @@ describe('Product Effects', () => {
   it('should fail loading product list', () => {
     const action = ProductActions.getProductList();
     const error = new Error();
-    const failure = ProductActions.productListLoadFailure({ error });
+    const failure = ProductActions.getProductListError({ error });
     const errorResponse = cold('-#', {}, error);
     mockProductsService.getAllProducts = jest.fn(() => errorResponse);
-    
+
     actions = hot('-a', { a: action });
     const expected = cold('--b', { b: failure });
 
