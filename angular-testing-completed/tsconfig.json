@@ -22,7 +22,8 @@
     "lib": [
       "ESNext",
       "dom"
-    ]
+    ],
+    "types": ["cypress"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
