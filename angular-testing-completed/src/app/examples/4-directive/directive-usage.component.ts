@@ -6,7 +6,7 @@ import { timer } from 'rxjs';
   selector: 'app-directive-usage',
   standalone: true,
   imports: [LoaderDirective],
-  template: `<div *appLoader="loading">content</div>`,
+  template: `<div *appLoader="loading" data-cy="loader-usage-content">content</div>`,
 })
 export class DirectiveUsageComponent implements OnInit {
   loading = true;

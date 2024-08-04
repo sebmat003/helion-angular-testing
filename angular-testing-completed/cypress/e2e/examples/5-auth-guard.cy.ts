@@ -1,4 +1,10 @@
+import { navigateTo } from "../../utils/navigate";
+
 describe('Auth guard', () => {
+  beforeEach(() => {
+    navigateTo(5);
+  });
+
   it('should show admin page', () => {});
 
   it('should show user page', () => {});

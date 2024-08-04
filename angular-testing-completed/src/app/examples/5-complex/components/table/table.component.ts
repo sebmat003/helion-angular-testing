@@ -4,7 +4,6 @@ import {
   Component,
   input,
   OnChanges,
-  OnInit,
   ViewChild,
 } from '@angular/core';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';

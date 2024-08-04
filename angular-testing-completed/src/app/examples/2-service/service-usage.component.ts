@@ -9,7 +9,7 @@ import { AsyncPipe } from '@angular/common';
   providers: [CountryService],
   template: `
     <h3>1. English countries</h3>
-    <div>
+    <div data-cy="english-countries">
       @for (country of englishCountries$ | async; let last = $last; track
       $index) {
       <span>{{ country.name.official }}</span> @if(!last) {<span>, </span>} }
@@ -19,13 +19,13 @@ import { AsyncPipe } from '@angular/common';
     <p>Capital: {{ poland.capital }}</p>
     <p>Population: {{ poland.population }}</p>
     <p>Currency: {{ poland.currencies['PLN'].name }}</p>
-    <p>
+    <p data-cy="polish-flag">
       Flag:
       <img class="flag" [src]="poland.flags.png" [alt]="poland.flags.alt" />
     </p>
     }
     <h3>3. All countries:</h3>
-    <div class="countries">
+    <div class="countries" data-cy="countries">
       @for (country of allCountries$ | async; track $index) {
       <div class="country">
         <p class="name">{{ country.name.official }}</p>

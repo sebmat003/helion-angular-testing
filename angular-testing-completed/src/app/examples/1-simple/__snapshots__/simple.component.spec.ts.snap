@@ -15,20 +15,29 @@ exports[`SimpleComponent should match the snapshot 1`] = `
     >
        All 
     </button>
-    <button>
+    <button
+      data-cy="book-category-button"
+    >
        Fantasy 
     </button>
-    <button>
+    <button
+      data-cy="book-category-button"
+    >
        Science Fiction 
     </button>
-    <button>
+    <button
+      data-cy="book-category-button"
+    >
        Biography 
     </button>
-    <button>
+    <button
+      data-cy="book-category-button"
+    >
        Thriller 
     </button>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -37,11 +46,13 @@ exports[`SimpleComponent should match the snapshot 1`] = `
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      20$
+       20$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -49,17 +60,20 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      20$
+       20$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -67,17 +81,20 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      30$
+       30$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -85,17 +102,20 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      30$
+       30$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -103,17 +123,20 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      30$
+       30$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -121,17 +144,20 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      30$
+       30$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -140,11 +166,13 @@ exports[`SimpleComponent should match the snapshot 1`] = `
     </div>
     <p
       class="price cheap"
+      data-cy="book-price"
     >
-      10$
+       10$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -153,11 +181,13 @@ exports[`SimpleComponent should match the snapshot 1`] = `
     </div>
     <p
       class="price cheap"
+      data-cy="book-price"
     >
-      5$
+       5$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -166,11 +196,13 @@ exports[`SimpleComponent should match the snapshot 1`] = `
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      20$
+       20$ 
     </p>
   </div><div
     class="book"
+    data-cy="book"
   >
     <div>
       <p>
@@ -178,14 +210,16 @@ exports[`SimpleComponent should match the snapshot 1`] = `
       </p>
       <span
         class="bestseller"
+        data-cy="book-bestseller"
       >
         bestseller!
       </span>
     </div>
     <p
       class="price"
+      data-cy="book-price"
     >
-      40$
+       40$ 
     </p>
   </div>
 </app-simple>
