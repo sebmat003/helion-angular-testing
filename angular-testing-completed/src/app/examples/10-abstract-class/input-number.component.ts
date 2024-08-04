@@ -17,6 +17,7 @@ import { AbstractFormControlComponent } from './abstract.class';
         [placeholder]="placeholder"
         [max]="maxNumber"
         [min]="minNumber"
+        data-cy="input-number"
       />
     </mat-form-field>
   `,

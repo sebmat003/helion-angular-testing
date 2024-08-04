@@ -6,7 +6,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-interceptor-usage',
   standalone: true,
-  template: `<button (click)="sendErrorRequest()">Send error request</button>`,
+  template: `<button
+    (click)="sendErrorRequest()"
+    data-cy="send-error-request-button"
+  >
+    Send error request
+  </button>`,
   styles: `
   ::ng-deep .mat-mdc-snackbar-surface {
     background-color: #B22222 !important;

@@ -17,7 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   template: `<form [formGroup]="form" (ngSubmit)="submit()">
     <app-input-number formControlName="control"></app-input-number>
-    <button mat-button type="submit" [disabled]="form.invalid">Submit</button>
+    <button mat-button type="submit" [disabled]="form.invalid" data-cy="submit-form">Submit</button>
   </form> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
