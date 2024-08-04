@@ -3,9 +3,13 @@
   <div class="product-form">
     <mat-form-field appearance="fill">
       <mat-label>Name</mat-label>
-      <input formControlName="name" matInput placeholder="Name" />
+      <input
+        formControlName="name"
+        matInput
+        placeholder="Name"
+        data-cy="product-name-input"
+      />
     </mat-form-field>
-
     <mat-form-field appearance="fill">
       <mat-label>Price</mat-label>
       <input
@@ -13,16 +17,20 @@
         type="number"
         matInput
         placeholder="Price"
+        data-cy="product-price-input"
       />
     </mat-form-field>
-
     <mat-form-field appearance="fill">
       <mat-label>Thumbnail</mat-label>
-      <mat-select formControlName="thumbnail">
+      <mat-select
+        formControlName="thumbnail"
+        data-cy="product-thumbnail-select"
+      >
         <mat-option
           *ngFor="let thumbnail of thumbnails"
           class="image-option"
           [value]="thumbnail"
+          data-cy="product-thumbnail-select-option"
         >
           <div class="centerize justify-between">
             {{ thumbnail }}
@@ -35,7 +43,13 @@
 </mat-dialog-content>
 <mat-dialog-actions class="d-flex justify-end">
   <button mat-button color="secondary" mat-dialog-close>Cancel</button>
-  <button mat-button color="primary" [disabled]="form.invalid" (click)="save()">
+  <button
+    mat-button
+    color="primary"
+    [disabled]="form.invalid"
+    (click)="save()"
+    data-cy="add-edit-save-button"
+  >
     Save
   </button>
 </mat-dialog-actions>

@@ -3,8 +3,14 @@
     <div *ngFor="let product of products; let i = index" class="product">
       <ng-container *ngIf="product">
         <div class="product-actions">
-          <mat-icon (click)="editProduct(product)">edit</mat-icon>
-          <mat-icon (click)="deleteProduct(product.id)">delete</mat-icon>
+          <mat-icon (click)="editProduct(product)" data-cy="product-edit-button"
+            >edit</mat-icon
+          >
+          <mat-icon
+            (click)="deleteProduct(product.id)"
+            data-cy="product-delete-button"
+            >delete</mat-icon
+          >
         </div>
         <div
           class="product-image"
@@ -20,6 +26,8 @@
     </div>
   </ng-container>
   <div class="add-product" (click)="addProduct()">
-    <mat-icon class="add-product-button">add</mat-icon>
+    <mat-icon class="add-product-button" data-cy="product-add-button"
+      >add</mat-icon
+    >
   </div>
 </div>
