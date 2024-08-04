@@ -9,6 +9,7 @@ describe('Boooks', () => {
     cy.get('[data-cy="book-category-button"]')
       .contains('Science Fiction')
       .click();
+
     cy.get('[data-cy="book"]')
       .contains('Solaris - science fiction')
       .should('be.visible');
