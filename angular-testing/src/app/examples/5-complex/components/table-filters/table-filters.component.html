@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <mat-form-field>
+    <mat-label>Choose expense year</mat-label>
+    <input matInput formControlName="year" placeholder="Year" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Choose category</mat-label>
+    <mat-select formControlName="categories" multiple="true">
+      @for (category of categories; track $index) {
+      <mat-option [value]="category">{{ category }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  <button type="submit" data-cy="filter-button">Filter</button>
+</form>

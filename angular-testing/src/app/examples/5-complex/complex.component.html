@@ -1,0 +1,9 @@
+@if (expenses()) {
+<app-table-filters (filters)="filtersChange($event)"></app-table-filters>
+<div class="flex-between">
+  <app-table [expenses]="expenses()"></app-table>
+  @if(expenses().length) {
+  <app-summary [expenses]="expenses()"></app-summary>
+  }
+</div>
+}

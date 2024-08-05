@@ -1,0 +1,33 @@
+<div class="categories">
+  <button
+    [class.active]="activeCategory() === 'ALL'"
+    (click)="activeCategory.set('ALL')"
+  >
+    All
+  </button>
+  @for (category of categories; track $index) {
+  <button
+    [class.active]="category === activeCategory()"
+    (click)="activeCategory.set(category)"
+    data-cy="book-category-button"
+  >
+    {{ category | titlecase }}
+  </button>
+  }
+</div>
+
+@if (filteredBooks.length) { @for (book of filteredBooks; track book.id) {
+<div class="book" data-cy="book">
+  <div>
+    <p>{{ book.name }} - {{ book.category }}</p>
+    @if (book.bestseller) {
+    <span class="bestseller" data-cy="book-bestseller">bestseller!</span>
+    }
+  </div>
+  <p class="price" [class.cheap]="book.price <= 10" data-cy="book-price">
+    {{ book.price }}$
+  </p>
+</div>
+} } @else {
+<p>No available books on the list</p>
+}

@@ -1,0 +1,46 @@
+.categories {
+  margin-bottom: 20px;
+
+  button {
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    transition: all 0.1s;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      background-color: rgb(87, 87, 255);
+      color: white;
+    }
+  }
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  position: relative;
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+  
+    &.cheap {
+      color: rgb(255, 62, 62)
+    }
+  }
+}
+
+.bestseller {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: rgb(87, 87, 255);
+  font-size: 13px;
+  font-weight: bold;
+}

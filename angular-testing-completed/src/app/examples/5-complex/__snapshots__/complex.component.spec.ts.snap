@@ -152,6 +152,7 @@ exports[`ComplexComponent should match the snapshot for initial view 1`] = `
         </div>
       </mat-form-field>
       <button
+        data-cy="filter-button"
         type="submit"
       >
         Filter
@@ -760,6 +761,7 @@ exports[`ComplexComponent should match the snapshot when no data occurs 1`] = `
         </div>
       </mat-form-field>
       <button
+        data-cy="filter-button"
         type="submit"
       >
         Filter
@@ -836,6 +838,7 @@ exports[`ComplexComponent should match the snapshot when no data occurs 1`] = `
               >
                 <p
                   class="no-data"
+                  data-cy="no-data-info"
                 >
                   No data matching the filter.
                 </p>
@@ -1197,6 +1200,7 @@ exports[`ComplexComponent should match the snapshot when the page is set to 2 1`
         </div>
       </mat-form-field>
       <button
+        data-cy="filter-button"
         type="submit"
       >
         Filter
