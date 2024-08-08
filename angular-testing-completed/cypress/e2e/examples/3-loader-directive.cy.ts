@@ -5,11 +5,11 @@ describe('Loader directive', () => {
     navigateTo(3);
   });
 
-  it('should show the spinner while waiting for the response', () => {
+  it('should show the spinner', () => {
     cy.get('[data-cy="loading-spinner"').should('be.visible');
   });
 
-  it('should show content after the response completion', () => {
+  it('should show content after 2 seconds', () => {
     cy.wait(2000)
       .get('[data-cy="loader-usage-content"]')
       .should('be.visible')
