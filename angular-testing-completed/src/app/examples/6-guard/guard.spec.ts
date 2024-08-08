@@ -38,18 +38,18 @@ describe('AccessGuard', () => {
     }
   );
 
-  it.each<[boolean, Role, Role]>([
-    [true, 'USER', 'USER'],
-    [true, 'ADMIN', 'ADMIN'],
-    [true, 'USER', 'OWNER'],
-    [true, 'ADMIN', 'OWNER'],
+  it.each<[Role, Role]>([
+    ['USER', 'USER'],
+    ['ADMIN', 'ADMIN'],
+    ['USER', 'OWNER'],
+    ['ADMIN', 'OWNER'],
   ])(
-    'should access the URL when loggedIn - %s, required role - %s, current role - %s',
-    (loggedIn, requiredRole, currentRole) => {
+    'should access the URL when loggedIn is true, required role - %s, current role - %s',
+    (requiredRole, currentRole) => {
       TestBed.runInInjectionContext(() => {
         router = inject(Router);
         authService = inject(AuthService);
-        authService.loggedIn = signal(loggedIn);
+        authService.loggedIn = signal(true);
         authService.role = currentRole;
 
         const guard = accessGuard(requiredRole);

@@ -23,7 +23,7 @@ describe('ErrorInterceptor', () => {
     errorService = TestBed.inject(ErrorService);
   });
 
-  it('should catch HTTP errors and forward them to ErrorService', (done) => {
+  it('should catch HTTP error and forward it to ErrorService', (done) => {
     const errorSpy = jest.spyOn(errorService.error$, 'next');
     const errorMessage = 'Test error message';
     const mockRequest = new HttpRequest('GET', '/test-url');
@@ -43,7 +43,7 @@ describe('ErrorInterceptor', () => {
     });
   });
 
-  it('should handle requests without errors normally', (done) => {
+  it('should handle request without error normally', (done) => {
     const mockResponse = { test: 123 };
     const mockRequest = new HttpRequest('GET', '/test-url');
     const mockNext = () => of(mockResponse) as any;

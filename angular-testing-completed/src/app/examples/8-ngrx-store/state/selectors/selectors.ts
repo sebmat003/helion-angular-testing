@@ -2,10 +2,6 @@ import { EntityState } from '@ngrx/entity';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { Product } from '../../models/store.models';
 
-export interface IProductsState {
-  products: Product[];
-}
-
 export const selectProductsFeature =
   createFeatureSelector<EntityState<Product>>('products');
 
