@@ -1,6 +1,6 @@
 # Tips
 
-- Install Jest (npm i jest@29.7.0 @types/jest @testing-library/jest-dom jest-marbles jest-preset-angular), @ngneat/spectator (npm i @ngneat/spectator@18.0.2),
+- Install Jest (npm i jest@29.7.0 @types/jest jest-marbles jest-preset-angular), @ngneat/spectator (npm i @ngneat/spectator@18.0.2),
 Cypress (npm i cypress@13.13.2)
 - Remove karma test runner in angular.json
 - Remove all karma and jasmine dependencies from package.json
