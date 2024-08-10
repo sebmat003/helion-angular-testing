@@ -25,7 +25,6 @@ describe('ComplexComponent', () => {
   const createComponent = createComponentFactory({
     component: ComplexComponent,
     imports: [TableComponent, SummaryComponent, TableFiltersComponent],
-    providers: [DataService],
     componentProviders: [
       {
         provide: DataService,
