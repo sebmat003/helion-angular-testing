@@ -51,19 +51,12 @@ describe('utils', () => {
   });
 
   describe('isNullOrEmpty', () => {
-    it('should return true for null or undefined', () => {
-      expect(isNullOrEmpty(null)).toBe(true);
-      expect(isNullOrEmpty(undefined)).toBe(true);
-    });
-
-    it('should return true for empty string', () => {
-      expect(isNullOrEmpty('')).toBe(true);
-    });
-
-    it('should return true for string with spaces only', () => {
-      expect(isNullOrEmpty('   ')).toBe(true);
-    });
-
+    it.each([null, undefined, '', '   '])(
+      'should return true for a value %s',
+      (value) => {
+        expect(isNullOrEmpty(value)).toBe(true);
+      }
+    );
     it('should return false for non-empty string', () => {
       expect(isNullOrEmpty('test')).toBe(false);
     });
